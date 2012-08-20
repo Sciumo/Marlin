@@ -25,7 +25,7 @@
 #define STRINGIFY(n) STRINGIFY_(n)
 
 #if LANGUAGE_CHOICE == 1
-
+        #define MSG_BUILT_DATE_TIME "Built: " __DATE__ " " __TIME__
 // LCD Menu Messages
 	#define WELCOME_MSG MACHINE_NAME " Ready."
 	#define MSG_SD_INSERTED "Card inserted"
@@ -115,7 +115,7 @@
 	#define MSG_BROWNOUT_RESET " Brown out Reset"
 	#define MSG_WATCHDOG_RESET " Watchdog Reset"
 	#define MSG_SOFTWARE_RESET " Software Reset"
-	#define MSG_MARLIN "Marlin "
+	#define MSG_MARLIN "Marlin M1 "
 	#define MSG_AUTHOR " | Author: "
 	#define MSG_CONFIGURATION_VER " Last Updated: "
 	#define MSG_FREE_MEMORY " Free Memory: "
@@ -264,7 +264,7 @@
 	#define MSG_BROWNOUT_RESET " Brown out Reset"
 	#define MSG_WATCHDOG_RESET " Watchdog Reset"
 	#define MSG_SOFTWARE_RESET " Software Reset"
-	#define MSG_MARLIN "Marlin: "
+	#define MSG_MARLIN "Marlin M1: "
 	#define MSG_AUTHOR " | Author: "
 	#define MSG_CONFIGURATION_VER " Last Updated: "
 	#define MSG_FREE_MEMORY " Free Memory: "
@@ -415,7 +415,7 @@
 #define MSG_BROWNOUT_RESET " Reset por Voltaje Incorrecto"
 #define MSG_WATCHDOG_RESET " Reset por Bloqueo"
 #define MSG_SOFTWARE_RESET " Reset por Software"
-#define MSG_MARLIN "Marlin "
+#define MSG_MARLIN "Marlin M1 "
 #define MSG_AUTHOR " | Autor: "
 #define MSG_CONFIGURATION_VER " Ultima actualizacion: "
 #define MSG_FREE_MEMORY " Memoria libre: "
